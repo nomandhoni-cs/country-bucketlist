@@ -21,6 +21,9 @@ ul li a{
     font-weight: 600;
     color: gray;
 }
+ul li a:hover{
+    color: #25aae2;
+}
 .menu{
     margin:25px 0;
     border-bottom: 1px dotted gray;
