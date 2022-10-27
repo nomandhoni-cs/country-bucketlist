@@ -14,7 +14,7 @@ position: relative;
 }
 .country-name{
     position:absolute;
-    bottom: 15px;
+    bottom: 10px;
     left: 0;
     right: 0;
     text-align: center;
