@@ -1,26 +1,71 @@
+/* How much flag display in a Row  */
 .country-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+/* OverLayer Start  */
 .single-country{
-position: relative;
+    position: relative;
+    display: block;
 }
+.single-country:hover::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 5px;
+    background: #000000;
+    height: 100%;
+    width: 97%;
+    opacity: .35;
+    z-index: 1;
+    border-radius: 10px;
+}
+.single-country:hover .country-name{
+    display: block;
+    color: white;
+    transition: .6s;
+    z-index: 10;
+}
+.single-country:hover .bucket-btn{
+    z-index: 10;
+    transition: .6s;
+    display: block;
+}
+/* OverLayer End  */
+/* Country flag style start */
 .country-img img{
     width: 290px;
     border-radius: 10px;
-    background-color: blueviolet;
     height: 160px;
+    box-shadow: 0 0 3px lightslategray;
 }
+/* Country flag style end */
 .country-name{
     position:absolute;
     bottom: 10px;
     left: 0;
     right: 0;
     text-align: center;
+    display: none;
 }
+.country-name h6{
+    font-weight: 600;
+    font-size: 18px;
+}
+/* Button Customization start  */
 .bucket-btn{
     position: absolute;
     top: 10px;
     right: 20px;
+    display: none;
 }
+.bucket-btn .btn{
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    line-height: 0;
+    padding: 2px;
+    background-color: white;
+}
+/* Button Customization end  */
