@@ -1,0 +1,9 @@
+.bucket-headding{
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+.bucket-image{
+height: 30px;
+width: 30px;
+}

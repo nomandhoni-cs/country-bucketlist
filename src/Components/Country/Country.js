@@ -2,15 +2,15 @@ import React from 'react';
 import './Country.css'
 const Country = (props) => {
 const countries = props.countries;
-{
-        console.log(countries)
-}
-    return (
-        <div className='country-container'>
+return (
+    <div className='country-container'>
                 {
-                   countries.map(country => { 
+                    countries.map(country => { 
+                        {
+                                console.log(country)
+                        }
                     return (
-                        <div><div className="single-country">
+                        <div key={country.ccn3}><div className="single-country">
                         <div className="country-img">
                         <img src={country.flags.png} alt="" />
                         </div>

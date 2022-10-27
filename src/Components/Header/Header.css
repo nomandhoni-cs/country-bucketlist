@@ -5,6 +5,9 @@
     height: 50px;
     width: 50px;
 }
+ul{
+    margin-top: 10px;
+}
 ul li{
     display: inline-block;
     line-height: 0;
@@ -17,4 +20,8 @@ ul li a{
     text-transform: uppercase;
     font-weight: 600;
     color: gray;
+}
+.menu{
+    margin:25px 0;
+    border-bottom: 1px dotted gray;
 }

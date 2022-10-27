@@ -10,8 +10,8 @@ const Body = () => {
         fetch('https://restcountries.com/v3.1/all')
         .then(res => res.json())
         .then(countries =>{
-        const firstTwentyOneCountries = countries.slice(0, 21);
-        setCountry(firstTwentyOneCountries);
+        const firstThirtyCountries = countries.slice(0, 30);
+        setCountry(firstThirtyCountries);
         // console.log(firstTwentyCountries);
         })
     }, []);
