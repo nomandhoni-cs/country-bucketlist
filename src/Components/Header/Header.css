@@ -19,7 +19,7 @@ ul li a{
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
-    color: darkslategray;
+    color: #454545;
     display: block;
 }
 ul li a:hover{

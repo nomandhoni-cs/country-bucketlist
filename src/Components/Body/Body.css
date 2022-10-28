@@ -1,0 +1,9 @@
+.load-more-btn{
+    margin-top: 20px;
+    border-top: 1px dotted gray;
+    text-align: center;
+    padding: 5px;
+}
+.load-more-btn .btn{
+    display: inline-block;
+}
