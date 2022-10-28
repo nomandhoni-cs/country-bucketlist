@@ -7,7 +7,7 @@ return (
                 {
                     countries.map(country => { 
                         {
-                                console.log(country)
+                                // console.log(country)
                         }
                     return (
                     <div key={country.ccn3}>
