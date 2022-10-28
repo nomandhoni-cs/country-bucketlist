@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import Bucket from '../Bucket/Bucket';
 import Country from '../Country/Country';
+import Footer from '../Footer/Footer';
+import Loadmore from '../Loadmore/Loadmore';
 import './Body.css'
 const Body = () => {
     const [countries, setCountry] = useState([]);
@@ -30,6 +32,16 @@ const Body = () => {
                     <Bucket></Bucket>
                     </div>
                 </div>
+            </div>
+            <div className="row">
+                <div className="load-more-btn col-xl-10">
+                    <Loadmore></Loadmore>
+                </div>
+            </div>
+            <div className="row">
+                <footer>
+                    <Footer></Footer>
+                </footer>
             </div>
         </div>
     );
