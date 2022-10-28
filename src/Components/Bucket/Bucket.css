@@ -3,6 +3,10 @@
     margin-bottom: 10px;
     border-bottom: 2px solid gray;
 }
+.bucket-headding h3{
+    color: #454545;
+    font-weight: 600;
+}
 .bucket-image{
 height: 30px;
 width: 30px;
