@@ -18,18 +18,27 @@ const Body = () => {
         })
     }, []);
 
-
+    const [country, setNewCountry] = useState([]);
+    // Handle Add cart function
+    const handleAddBucketBtn = (product) => {
+      const newBucket = [...country, product];
+      setNewCountry(newBucket);
+      console.log("Country added", product);
+      // setPrice((product.price) + price);
+    };
     return (
         <div className='container'>
             <div className="row">
                 <div className="col-xl-10">
                     <div className="country-area">
-                        <Country countries = {countries} />
+                        {
+                            countries.map((country) => (<Country country = {country} handleAddBucketBtn = {handleAddBucketBtn} />) )
+                        }
                     </div>
                 </div>
                 <div className="col-xl-2">
                     <div className="bucket-area">
-                    <Bucket></Bucket>
+                    <Bucket country={country}/>
                     </div>
                 </div>
             </div>
