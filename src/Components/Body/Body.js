@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Bucket from '../Bucket/Bucket';
+import DarkVariantExample from '../Carousel/Carousel';
 import Country from '../Country/Country';
 import Footer from '../Footer/Footer';
 import Loadmore from '../Loadmore/Loadmore';
@@ -28,6 +29,11 @@ const Body = () => {
     };
     return (
         <div className='container'>
+            <div className="row">
+                <div className="col-xl-12">
+                    <DarkVariantExample />
+                </div>
+            </div>
             <div className="row">
                 <div className="col-xl-10">
                     <div className="country-area">
